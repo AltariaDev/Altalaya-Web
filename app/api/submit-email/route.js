@@ -17,8 +17,8 @@ export async function POST(request) {
     }
 
     await resend.emails.send({
-      from: "Altalaya <no-reply@thallein.com>",
-      to: ["soporte@altalaya.com"],
+      from: "Altalaya <no-reply@altalaya.com>",
+      to: ["altariadev@gmail.com"],
       subject: "Nuevo interesado en Altalaya",
       html: `
       <html>
@@ -33,7 +33,7 @@ export async function POST(request) {
     });
 
     await resend.emails.send({
-      from: "Altalaya <no-reply@thallein.com>",
+      from: "Altalaya <no-reply@altalaya.com>",
       to: [email],
       subject: "¡Bienvenido a la Aventura de Altalaya! 🏔️",
       html: `
